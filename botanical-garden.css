@@ -4,12 +4,12 @@
   display: inline-block;
 }
 .main-wrapper {
+  max-width: 100%;
   width: 1400px;
-  height: 3171px;
+  max-height: 100%;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  flex-wrap: wrap;
 }
 
 .main-logo-img {
@@ -69,13 +69,13 @@ body {
   position: relative;
   width: 528px;
   height: 306px;
-  top: 250px;
+  top: 300px;
   left: 99px;
 }
 .header__img {
   width: 458.21px;
   height: 640.19px;
-  top: -242.38px;
+  top: -165.38px;
   left: 753.41px;
   position: relative;
 }
@@ -151,7 +151,7 @@ body {
   width: 534px;
   height: 354px;
   position: relative;
-  top: 90px;
+  top: 50px;
   left: 145px;
 }
 .text-lorem {
@@ -162,6 +162,7 @@ body {
   letter-spacing: 0em;
   text-align: left;
   color: white;
+  width: 230px;
 }
 .h2__text-font {
   font-family: "Libre Baskerville";
@@ -171,14 +172,14 @@ body {
   letter-spacing: 0em;
   text-align: left;
   color: white;
+  width: 230px;
 }
 .colmun__text {
   display: flex;
   flex-direction: column;
   width: 417px;
-  height: 350px;
   position: relative;
-  top: 100px;
+  top: 45px;
   left: 235px;
 }
 .learn__more-two {
@@ -201,8 +202,8 @@ body {
   width: 1040px;
   height: 409px;
   position: relative;
-  right: 625px;
-  top: 200px;
+  right: 620px;
+  top: 470px;
 }
 .white__space {
   background-image: url("./pic/Frame-background.png");
@@ -216,10 +217,81 @@ body {
   display: flex;
   background-position: right;
 }
+/* for phones */
+@media screen and (max-width: 768px) {
+  .header__div {
+    position: relative;
+    top: 35px;
+    left: 380px;
+  }
+  .header__img {
+    position: relative;
+    left: 370px;
+    top: 40px;
+  }
+  .main-wrapper {
+    flex-wrap: wrap;
+    max-width: 768px;
+    margin: 0 auto;
+  }
+  .ractagle {
+    position: relative;
+    top: 60px;
+  }
+  .three-in-one {
+    position: relative;
+    top: 110px;
+  }
+  .footer__text {
+    max-width: 743px;
+    /* max-height: 658px; */
+    margin: 0 auto;
+  }
+  .footer__last-div {
+    max-width: 744px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .main-wrapper {
+    max-width: 744px;
+    height: 3719px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .header__img {
+    position: relative;
+    left: 420px;
+    top: 60px;
+  }
+  .header__div {
+    position: relative;
+    /* bottom: 500px; */
+    left: 400px;
+    top: 60px;
+  }
+  .ractagle {
+    position: relative;
+    top: 135px;
+  }
+  .three-in-one {
+    position: relative;
+    top: 170px;
+  }
+  .footer__text {
+    max-width: 744px;
+    margin: 0 auto;
+  }
+  .footer__last-div {
+    max-width: 744px;
+    margin: 0 auto;
+  }
+}
+
 .news__update {
   width: 375px;
   height: 50px;
-  top: 50px;
   left: 99px;
   position: relative;
   font-family: "Libre Baskerville";
@@ -229,6 +301,7 @@ body {
   letter-spacing: 0em;
   text-align: left;
   color: #343d33;
+  bottom: 450px;
 }
 .see__icon-location {
   position: relative;
@@ -238,29 +311,28 @@ body {
   width: 519px;
   height: 518px;
   position: relative;
-  top: 140px;
-  left: 100px;
+  top: 100px;
+  right: 285px;
 }
 .main__three-texts {
   width: 630px;
   height: 535px;
   gap: 20px;
   left: 680px;
-  bottom: 380px;
+  bottom: 420px;
   position: relative;
   display: flex;
   flex-direction: column;
 }
 .footer__text {
   width: 1400px;
-  height: 352px;
+  height: 265px;
   background-color: #414840;
-  position: relative;
-  top: 2819px;
-  right: 1398px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  position: relative;
+  bottom: 300px;
 }
 .logo-footer {
   width: 221px;
@@ -272,7 +344,8 @@ body {
   height: 98px;
   width: 269px;
   position: relative;
-  top: 60px;
+  top: 30px;
+  gap: 10px;
 }
 .ul__texets {
   font-family: "Libre Baskerville";
@@ -287,7 +360,7 @@ body {
   gap: 10px;
   text-align: left;
   position: relative;
-  top: 53px;
+  top: 20px;
 }
 .p__img-text {
   display: flex;
@@ -309,12 +382,11 @@ body {
   width: 1400px;
   height: 80px;
   background-color: #343d33;
-  position: relative;
-  top: 2739px;
-  right: 1398px;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  bottom: 300px;
 }
 .footer__p-text {
   font-family: "Roboto";
